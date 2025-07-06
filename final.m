@@ -277,3 +277,6 @@ fprintf('SSIM (R/G/B/平均): %.4f / %.4f / %.4f / %.4f\n', ssim_r, ssim_g, ssim
 figure(8);% 显示画布上的原始图像和裁剪后重建图像并排
 subplot(1,2,1); imshow(canvas); title('原始图像 (缩放后置于画布)');
 subplot(1,2,2); imshow(rgb_image_cropped); title('重建图像 (裁剪后)');
+
+
+%本代码基于JackHCC的项目进行优化改进，原项目地址：https://github.com/JackHCC/Computer-Generated-Hologram/blob/5ce72697d2ee0c0e4b94a58bde76eb9e428ac283/Matlab/offaxis_interference_hologram.m#L2
